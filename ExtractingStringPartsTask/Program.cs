@@ -38,14 +38,14 @@
             string state2 = state.ToLower();
             string city2 = city.ToLower();
             string landmark2 = landmark.ToLower();
-            int vowelCount = 0;
-            //char[] vowels = { 'a', 'e', 'i', 'o', 'u' }; // Array of vowels
+            ///char[] vowels = { 'a', 'e', 'i', 'o', 'u' }; // Array of vowels???
             char a = 'a';
             char e = 'e';
             char i = 'i';
             char o = 'o';
             char u = 'u';
            
+            int vowelCount = 0;
             for (int y = 0; y < country2.Length; y++)
             {
                 if (country2[i] == a || country2[i] == e || country2[i] == i || country2[i] == o || country2[i] == u)
@@ -57,6 +57,7 @@
             Console.WriteLine(country + " has " + vowelCount + " vowels");
 
 
+            vowelCount = 0;
             for (int y = 0; y < state2.Length; y++)
             {
                 if (state2[i] == a || state2[i] == e || state2[i] == i || state2[i] == o || state2[i] == u)
@@ -68,6 +69,7 @@
             Console.WriteLine(state + " has " + vowelCount + " vowels");
 
 
+            vowelCount = 0;
             for (int y = 0; y < city2.Length; y++)
             {
                 if (city2[i] == a || city2[i] == e || city2[i] == i || city2[i] == o || city2[i] == u)
@@ -77,8 +79,9 @@
                 y = y + 1;
             }
             Console.WriteLine(city + " has " + vowelCount + " vowels");
-       
-            
+
+
+            vowelCount = 0;
             for (int y = 0; y < landmark2.Length; y++)
             {
                 if (landmark2[i] == a || landmark2[i] == e || landmark2[i] == i || landmark2[i] == o || landmark2[i] == u)
